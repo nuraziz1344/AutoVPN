@@ -25,7 +25,8 @@ exit 0
 fi
 
 # Download File Ohp
-wget https://github.com/lfasmpao/open-http-puncher/releases/download/0.1/ohpserver-linux32.zip
+# wget https://github.com/lfasmpao/open-http-puncher/releases/download/0.1/ohpserver-linux32.zip
+wget https://github.com/givps/open-http-puncher/releases/download/1.0/ohpserver-linux32.zip
 unzip ohpserver-linux32.zip
 chmod +x ohpserver
 cp ohpserver /usr/local/bin/ohpserver
