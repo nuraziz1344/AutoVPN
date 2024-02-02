@@ -34,20 +34,20 @@ Buat VPS Fresh atau VPS Baru dan Wajib Menggunakan User: root
 * Login VPS User menggunakan user root
 * Cara langsung masuk ke akses root
 
-```html
+```bash
 sudo su
 ```
 Atau
-```html
+```bash
 sudo -i
 ```
 atau
-```html
+```bash
 su
 ```
 
 ### Link Video Tutorial Cara Install
-```html
+```bash
 https://www.facebook.com/100031931503057/posts/628374871570224/?app=fbl
 ```
 
@@ -64,7 +64,7 @@ atau
 ## 1.
 <img src="https://img.shields.io/badge/Update%20_&_%20Upgrade-green">
 
-  ```html
+  ```bash
 apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 ```
   
@@ -73,10 +73,8 @@ apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 
 * Login ke VPS dan Aktifkan Root Sementara
 
-  
-```html
+```bash
 sudo su
-cd
 cd
 ```
 
@@ -87,9 +85,8 @@ cd
 * Buat Akses Root Di VPS /Root VPS
 * Untuk Mengizinkan Root Dan Ubah Password Login di VPS Google Cloud Platform, Aws, Dan Lain-lain
    
-```html
-  wget -qO- -O vpsroot.sh https://raw.githubusercontent.com/caliphdev/Mantap/main/vpsroot.sh && bash vpsroot.sh
-  
+```bash
+  wget -qO- -O vpsroot.sh https://raw.githubusercontent.com/nuraziz1344/AutoVPN/main/vpsroot.sh && bash vpsroot.sh
 ```
   
 ### 3.
@@ -98,8 +95,8 @@ cd
 
 * Install Semua Layanan VPN /Install All VPN Service
    
-```html
-rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-get update -y && apt-get upgrade && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/caliphdev/Mantap/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
+```bash
+rm -f setup.sh && apt update && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/nuraziz1344/AutoVPN/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
   
 ```
   
@@ -116,29 +113,29 @@ https://trakteer.id/sulaiman-l/tip
 
 ### 5. MENU, INFO ,UPDATE ,FIX
 * untuk menampilkan menu
-```html
+```bash
 menu
 ```
 * untuk update menu dan update info
-```html
+```bash
 updatemenu
 ```
 * otomatis untuk memperbaiki error SSLH, WS-TLS
-```html
+```bash
 sl-fix
 ```
-```html
+```bash
 reboot
 ```
 * Perbaiki SSL ERROR
 * otomatis untuk memperbaiki error Sertifikat SSL/TLS dan SUBDOMAIN
 * perbaiki error di bagian acme domain
 * untuk update Sertifikat SSL/TLS
-```html
+```bash
 slhost && certv2ray
 ```
 * lalu restart
-```html
+```bash
 restart
 ```
 *
@@ -148,17 +145,17 @@ restart
 ### 6. FIX ERROR SSLH WS
 # Auto Fix Error SSLH + WS-TLS 443
 * 1 • Jika terjadi error di SSLH dan SSH WS-TLS nya,gunakan script ini untuk memperbaiki nya
-```html
+```bash
 menu
  ```
 
 * 2 • di menu lalu pilih 17 (SL-FIX Menu)
-```html
+```bash
 17
  ```
 
 * 3 • jika sudah selesai lalu reboot/ hidupkan ulang vps nya
-```html
+```bash
 reboot
  ```
 
@@ -173,16 +170,16 @@ reboot
 * ubah port yg mau di ubah ,jika 443 silahkan ubah tulisan yang ada 443
 * setelah di edit lalu di simpan (CTRL+X+Y dan enter)
 
-```html
+```bash
 nano /etc/systemd/system/ws-tls.service
  ```
-```html
+```bash
 nano /usr/local/bin/ws-tls
  ```
-```html
+```bash
 nano /etc/default/sslh
  ```
-```html
+```bash
 nano /etc/stunnel5/stunnel5.conf
  ```
 
@@ -191,26 +188,26 @@ nano /etc/stunnel5/stunnel5.conf
 * Perbaiki sslh yang error di vps yang tidak support sslh
 * khusus yang vps nya tidak support sslh
 * matikan ws-tls
-```html
+```bash
 systemctl stop ws-tls
 ```
 * buat user sslh / edit passwd
-```html
+```bash
 echo sslh:x:109:114::/nonexistent:/usr/sbin/nologin >> /etc/passwd
 ```
 * note: edit passwd dan pindah sslh nya di atas vnstat
 
 * start sslh dan jalankan
-```html
+```bash
 systemctl start sslh
 /etc/init.d/sslh start
 /etc/init.d/sslh restart
 ```
 * lalu start ws-tls
-```html
+```bash
 systemctl start ws-tls
 ```
-```html
+```bash
 reboot
 ```
 *done
