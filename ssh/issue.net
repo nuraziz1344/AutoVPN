@@ -1,21 +1,19 @@
 <html>
    <body>
-      <b>
-         <h3 style="text-align: center;"><font                              color="#07eb0b">PREMIUM SERVER</font></h3>
-      </b>
-      <b>
-         <p style="text-align: center;"><font              color="#0509eb">╞═══════ ༶ ❅ ༶ ═══════╡</font></p>
-      </b>
-      <b>
-         <h5 style="text-align:                    center;"><font color="#fce405">- No Multilogin<br>- No DDOS<br>- No Hacking<br>- No Torrent<br>- No Over Download<br> Ketahuan Melanggar = BANNED<br></font></h5>
-      </b>
-      <b>
-         <p style="text-align:               center;"><font color="#0509eb">╞═══════ ༶ ❅ ༶ ═══════╡</font></p>
-      </b>
-      <b>
-         <h5                        style="text-align: center;"><font color="#dbeb05">CaliphVPN</font></h5>
-      </b>
-    <b>
-         <h5 style="text-align: center;"><font color="#25eb07">WhatsApp : https://wa.me/6285173377877</font><br><font color="#2908ff">Telegram : https://t.me/caliphdev</font></h5>
-      </b>
+      <h3 style="text-align: center; color: #07eb0b;"><b>PREMIUM SERVER</b></h3>
+      <p style="text-align: center; color: #0509eb;">╞═══════ ༶ ❅ ༶ ═══════╡</p>
+      <h5 style="text-align: center; color: #fce405;">
+         - No Multilogin<br>
+         - No DDOS<br>
+         - No Hacking<br>
+         - No Torrent<br>
+         - No Over Download<br>
+         <em>Ketahuan Melanggar = BANNED</em>
+      </h5>
+      <p style="text-align: center; color: #0509eb;">╞═══════ ༶ ❅ ༶ ═══════╡</p>
+      <h5 style="text-align: center; color: #dbeb05;">CaliphVPN</h5>
+      <h5 style="text-align: center; color: #25eb07;">
+        Telegram: <a href="https://t.me/caliphdev" style="color: #2908ff;">https://t.me/caliphdev</a>
+      </h5>
    </body>
+</html>
