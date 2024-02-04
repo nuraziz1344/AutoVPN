@@ -116,8 +116,8 @@ screen -L -Logfile ./vpn-install.log -S setup ./setup.sh
 
 <img src="https://img.shields.io/badge/DONE%20_/_%20SELESAI-green">
 
-* • jika tidak bisa login di vps ,gunakan port ssh
-* • 22, 2253
+* jika tidak bisa login di vps ,gunakan port ssh
+* 22, 2253
 
 ### 5. MENU, INFO ,UPDATE ,FIX
 
